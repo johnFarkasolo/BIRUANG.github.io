@@ -10,7 +10,7 @@
 <title>Shop</title>
 </head>
 
-<body onload="load()">
+<body>
 <!-- NAVIGATION -->
 <header>
 	<div class="center-block-main">
@@ -165,7 +165,7 @@
 		<div class="subscribe-form">
 			<form method="get">
 				<input type="email" class="email-inpt" id="submit-inpt" placeholder="eony321v@gmail.com">
-				<input type="submit" class="submit-inpt" value="Sign Up" onclick="save()">
+				<input type="submit" class="submit-inpt" value="Sign Up">
 			</form>
 		</div>
 	</div>
@@ -243,8 +243,8 @@
 			<h2>Contact Us</h2>
 			<form method="get">
 				<input type="email" class="ftrmail" id="ftrmail" placeholder="E-mail...">
-				<textarea class="ftrtextarea" id="ftrtextarea" placeholder="Message..." rows="6" onload="load()"></textarea>
-				<input type="submit" class="ftrsubmit" value="Send message" onclick="save()">
+				<textarea class="ftrtextarea" id="ftrtextarea" placeholder="Message..." rows="6"></textarea>
+				<input type="submit" class="ftrsubmit" value="Send message">
 			</form>
 		</article>
 	</div>
@@ -292,32 +292,5 @@
 		});
 	</script>
 <!-- /TOP_BTN -->
-<!-- LOCAL_STORAGE -->
-	<script>
-	function save() {
-
-		var fieldValue = document.getElementById('search').value;
-		localStorage.setItem('srl_', fieldValue);
-		
-
-		var fieldValueSecond = document.getElementById('submit-inpt').value;
-		localStorage.setItem('sub__', fieldValueSecond);
-		
-
-		var fieldValueThird = document.getElementById('ftrmail').value;
-		localStorage.setItem('ftrm_', fieldValueThird);
-		
-
-	}	
-
-	function load() {
-		var storedValue = localStorage.getItem('ftra_') {
-			if (storedValue) {
-				document.getElementById('ftrtextarea').value = storedValue;
-			}
-		}
-	}	
-	</script>
-<!-- /LOCAL_STORAGE -->
 </body>
 </html>
